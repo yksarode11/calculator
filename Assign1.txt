@@ -1,0 +1,182 @@
+import java.util.Scanner;
+
+public class Assign1 {
+
+	
+	public static void main(String[] args) {
+//1.Finding area and perimeter of rectangle or circle.
+		/*
+		 * Scanner io = new Scanner(System.in);
+		 * 
+		 * System.out.println("Input the radius of the circle: "); double radius =
+		 * io.nextDouble();
+		 * 
+		 * System.out.println("Perimeter is = " + (2 * radius * Math.PI));
+		 * System.out.println("Area is = " + (Math.PI * radius * radius));
+		 */
+		/*
+		 * //2.check given no is even or odd Scanner sc = new Scanner(System.in);
+		 * 
+		 * System.out.print("Enter a number: "); int num = sc.nextInt();
+		 * 
+		 * String evenOdd = (num % 2 == 0) ? "even" : "odd";
+		 * 
+		 * System.out.println(num + " is " + evenOdd);
+		 */
+	        
+	        //4. Write a program to find minimum of three numbers using nested if-else.
+			/*
+			 * int min,n1,n2,n3;
+			 * 
+			 * Scanner sc=new Scanner(System.in); System.out.println("Enter 3 nos :");
+			 * 
+			 * n1=sc.nextInt();//assignment n2=sc.nextInt(); n3=sc.nextInt();
+			 * 
+			 * min=min = (n1 < n2) ? (n1 <n3 ? n1 : n3) : (n2 < n3 ? n2 : n3);
+			 * 
+			 * System.out.println("Minimumval="+min); sc.close();
+			 */
+				
+	      /*  //5.Accept a number with 1 or 2 digit from user and display it in words.			
+				Scanner sc=new Scanner(System.in);
+				
+				System.out.println("Enter a number::");
+				int digit=sc.nextInt();
+				
+				switch(digit/10)
+				{
+				case 1:
+					System.out.println("ONE ");
+					break;
+				case 2:
+					System.out.println("TWO ");
+					break;
+				case 3:
+					System.out.println("THREE ");
+					break;
+				case 4:
+					System.out.println("FOUR ");
+					break;
+				case 5:
+					System.out.println("FIVE ");
+					break;
+				case 6:
+					System.out.println("SIX ");
+					break;
+				case 7:
+					System.out.println("SEVEN ");
+					break;
+				case 8:
+					System.out.println("EIGHT ");
+					break;
+				case 9:
+					System.out.println("NINE ");
+					break;
+					
+				
+				}
+				
+				switch(digit%10)
+				{
+				case 0:
+					System.out.println("ZERO");
+					break;
+				case 1:
+					System.out.println("ONE");
+					break;
+				case 2:
+					System.out.println("TWO");
+					break;
+				case 3:
+					System.out.println("THREE");
+					break;
+				case 4:
+					System.out.println("FOUR");
+					break;
+				case 5:
+					System.out.println("FIVE");
+					break;
+				case 6:
+					System.out.println("SIX");
+					break;
+				case 7:
+					System.out.println("SEVEN");
+					break;
+				case 8:
+					System.out.println("EIGHT");
+					break;
+				case 9:
+					System.out.println("NINE");
+					break;		
+				}
+*/
+/*//6.Accept 3 subject marks from user and find percentage, and total.
+ * 
+ * private static int math;
+	private static int eng;
+	private static int phy;
+ * 
+ * 
+
+			int eng,phy,math; 	    
+		Scanner	sc = new Scanner(System.in);
+			
+			System.out.print(" Please Enter the three Subjects Marks : ");
+			eng = sc.nextInt();	
+			phy = sc.nextInt();	
+		
+			math = sc.nextInt();	
+			
+			totalmarks(eng,phy, math);
+		}	
+		public static void totalmarks(int eng, int phy , int math)
+		{
+			float total, Percentage, Average;	
+			total = eng+phy + math;
+			Average = total / 3;
+		    Percentage = (total / 300) * 100;
+		    
+		    System.out.println(" Total Marks =  " + total);
+		    System.out.println(" Average Marks =  " + Average);
+		    System.out.println(" Marks Percentage =  " + Percentage);}*/
+	//4.
+		float basic, ta, da, hra,Netsalary;
+
+	    /* Input basic salary of employee */
+	   System.out.println("Enter basic salary of an employee:");
+		Scanner	sc = new Scanner(System.in);
+		
+		
+		  basic=sc.nextFloat();
+		  
+		  System.out.println("Enter Basic da Of Employee: "); 
+		  ta=sc.nextFloat();
+
+		  System.out.println("Enter Basic ta Of Employee: "); 
+		  da=sc.nextFloat();
+		 
+		  System.out.println("Enter Basic hra Of Employee: ");
+		  hra=sc.nextFloat();
+if(basic<=5000) {
+		  da = (basic*10)/100;
+		  ta = (basic*20)/100;
+		  hra = (basic*10)/100;
+}
+else {
+	  da = (basic*15)/100;
+	  ta = (basic*25)/100;
+	  hra = (basic*30)/100;
+}
+		  Netsalary = basic + da + hra+ta;
+
+		  System.out.println("NetSalary Of Employee: "+Netsalary);
+	        
+	        
+	        
+	        
+	
+
+
+
+	}
+}
